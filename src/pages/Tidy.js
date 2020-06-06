@@ -6,6 +6,7 @@ import FeedbackSection from '../components/tidy/FeedbackSection';
 import ProductSection from '../components/tidy/ProductSection';
 import PricingSection from '../components/tidy/PricingSection';
 import FooterSection from '../components/tidy/FooterSection';
+import RoadmapSection from '../components/tidy/RoadmapSection';
 
 const themeTidy = {
     bgColorPrimary: '#101D2D',
@@ -28,6 +29,7 @@ const Tidy = () => {
             <FeatureSection />
             <FeedbackSection />
             <ProductSection />
+            <RoadmapSection />
             <PricingSection />
             <FooterSection />
         </ThemeProvider>
