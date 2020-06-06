@@ -41,13 +41,16 @@ const Link = styled.a`
     }
 `
 
-const ProductCard = ({card}) => {
+const ProductCard = ({ card }) => {
     return (
         <CardContainer>
             <ImageContainer src={card.icon} alt="news-image" />
             <CardTitle>{card.title}</CardTitle>
             <CardText>{card.text}</CardText>
-            <Link>Read more ⤴ </Link>
+            <Link>
+                Read more
+                <svg width="16" height="12" style={{margin: "0 10px"}} xmlns="http://www.w3.org/2000/svg"><path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#2174EA"></path></svg>
+            </Link>
         </CardContainer>
     );
 };

@@ -1,9 +1,11 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import HeadingSection from '../components/tidy/HeadingSection';
 import FeatureSection from '../components/tidy/FeatureSection';
 import FeedbackSection from '../components/tidy/FeedbackSection';
 import ProductSection from '../components/tidy/ProductSection';
+import PricingSection from '../components/tidy/PricingSection';
+import FooterSection from '../components/tidy/FooterSection';
 
 const themeTidy = {
     bgColorPrimary: '#101D2D',
@@ -26,6 +28,8 @@ const Tidy = () => {
             <FeatureSection />
             <FeedbackSection />
             <ProductSection />
+            <PricingSection />
+            <FooterSection />
         </ThemeProvider>
     );
 };
