@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const Root = styled.div`
     padding: 30px 0;
@@ -55,4 +56,4 @@ const RoadmapElement = ({date}) => {
     );
 };
 
-export default RoadmapElement;
+export default withFade(RoadmapElement);

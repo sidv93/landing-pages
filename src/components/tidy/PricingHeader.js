@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -41,4 +42,4 @@ const PricingHeader = () => {
     );
 };
 
-export default PricingHeader;
+export default withFade(PricingHeader);

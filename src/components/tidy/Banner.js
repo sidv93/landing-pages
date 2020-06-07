@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Placeholder from '../../assets/tidy/video-placeholder.jpg';
+import withFade from '../../utils/withFade';
 
 const BannerContainer = styled.div`
     background-color: inherit;
@@ -15,6 +16,7 @@ const InfoContainer = styled.div`
     padding-right: 30px;
 `;
 const ImageContainer = styled.div`
+    cursor: pointer;
 `;
 const InfoHeader = styled.h1`
     color: ${props => props.theme.headerTextColor};
@@ -84,11 +86,13 @@ const Banner = () => {
                     <LearnButton>Learn more</LearnButton>
                 </ButtonsContainer>
             </InfoContainer>
-            <ImageContainer>
-                <img src={Placeholder} alt="placeholder" height="396" width="500" />
-            </ImageContainer>
+            
+                <ImageContainer>
+                    <img src={Placeholder} alt="placeholder" height="396" width="500" />
+                </ImageContainer>
+            
         </BannerContainer>
     );
 };
 
-export default Banner;
+export default withFade(Banner);

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -39,4 +40,4 @@ const RoadmapHeader = () => {
     );
 };
 
-export default RoadmapHeader;
+export default withFade(RoadmapHeader);

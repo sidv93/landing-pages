@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import unavailable from '../../assets/tidy/unavailable.png';
 import available from '../../assets/tidy/available.png';
+import withFade from '../../utils/withFade';
 
 const CardContainer = styled.div`
     background-color: ${props => props.theme.sectionsBgColor};
@@ -98,7 +99,6 @@ const Image = styled.img`
 `;
 
 const PricingCard = ({ price, info }) => {
-    console.log(info);
     return (
         <CardContainer>
             <Header>
@@ -127,4 +127,4 @@ const PricingCard = ({ price, info }) => {
     );
 };
 
-export default PricingCard;
+export default withFade(PricingCard);

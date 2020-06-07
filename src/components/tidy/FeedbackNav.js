@@ -6,6 +6,7 @@ import FeedbackTab3 from '../../assets/tidy/feature-tab-icon-3.svg';
 import FeedbackTab4 from '../../assets/tidy/feature-tab-icon-4.svg';
 import NavCard from './NavCard';
 import FeedbackImage from './FeedbackImage';
+import withFade from '../../utils/withFade';
 
 const feedbackText = 'Internal Feedback';
 
@@ -49,4 +50,4 @@ const FeedbackNav = () => {
     );
 };
 
-export default FeedbackNav;
+export default withFade(FeedbackNav);

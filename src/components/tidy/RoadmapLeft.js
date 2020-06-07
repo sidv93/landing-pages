@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const Root = styled.div`
     padding: 30px 0;
     position: relative;
     width: 50%;
-    /* left: 50%; */
     text-align: right;
 
     &:before {
@@ -57,4 +57,4 @@ const RoadmapLeft = ({date}) => {
     );
 };
 
-export default RoadmapLeft;
+export default withFade(RoadmapLeft);

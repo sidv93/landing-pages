@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const CardContainer = styled.div`
     background-color: ${props => props.theme.sectionsBgColor};
@@ -55,4 +56,4 @@ const ProductCard = ({ card }) => {
     );
 };
 
-export default ProductCard;
+export default withFade(ProductCard);

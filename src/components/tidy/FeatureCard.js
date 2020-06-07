@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const CardContainer = styled.div`
     min-width: 250px;
@@ -42,4 +43,4 @@ const FeatureCard = ({feature}) => {
     );
 };
 
-export default FeatureCard;
+export default withFade(FeatureCard);

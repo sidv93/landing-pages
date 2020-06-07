@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PricingCard from './PricingCard';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const text = 'Excepteur sint occaecat velit';
 const tier3 = new Array(5).fill({ text,available: true });
@@ -17,7 +19,7 @@ const PricingCardsContainer = styled.div`
     align-items: center;
     margin: 30px 0;
 `;
-const RangeContainer = styled.div`
+const RangeContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,9 +54,12 @@ const CardsContainer = styled.div`
 `;
 
 const PricingCards = () => {
+    const [ref, inView] = useInView({
+        threshold: 0.3
+    });
     return (
         <PricingCardsContainer>
-            <RangeContainer>
+            <RangeContainer ref={ref} initial={{opacity: 0}} animate={{opacity: inView ? 1: 0}} transition={{duration: 1}}>
                 <UsersLabel>How many users do you have?</UsersLabel>
                 <Range>
                     <RangeSlider type="range" min="1" max="100" />

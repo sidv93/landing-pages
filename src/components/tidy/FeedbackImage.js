@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavImage from '../../assets/tidy/features-tabs-image.png';
+import withFade from '../../utils/withFade';
 
 const ImageContainer = styled.div`
     display: flex;
@@ -21,4 +22,4 @@ const FeedbackImage = () => {
     );
 };
 
-export default FeedbackImage;
+export default withFade(FeedbackImage);

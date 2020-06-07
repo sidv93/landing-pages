@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const ContactContainer = styled.div`
     background-color: ${props => props.theme.buttonBgColor};
@@ -45,4 +46,4 @@ const EmailContact = () => {
     );
 };
 
-export default EmailContact;
+export default withFade(EmailContact);
