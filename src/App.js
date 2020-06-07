@@ -5,6 +5,7 @@ import Tidy from './pages/Tidy';
 import Supreme from './pages/Supreme';
 import Cube from './pages/Cube';
 import Neon from './pages/Neon';
+import Twist from './pages/Twist';
 
 const themeCube = {
   bgColorPrimary: '#161822',
@@ -31,6 +32,9 @@ function App() {
         <Route path="/tidy">
           <Tidy />
         </Route>
+        <Route path="/twist">
+          <Twist />
+        </Route>
         <Route path="/supreme">
           <Supreme />
         </Route>
@@ -41,7 +45,7 @@ function App() {
           <Neon />
         </Route>
         <Route path="/">
-          <Tidy />
+          <Twist />
         </Route>
       </Switch>
     </Router>
