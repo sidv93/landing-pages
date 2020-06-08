@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-// import Placeholder from '../../assets/tidy/video-placeholder.jpg';
-// import withFade from '../../utils/withFade';
+import Placeholder from '../../assets/twist/hero-image.svg';
+import Background from '../../assets/twist/illustration-element-01.svg';
+import withFade from '../../utils/withFade';
 
 const BannerContainer = styled.div`
     background-color: inherit;
@@ -14,10 +15,26 @@ const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding-right: 30px;
-    /* width: 50%; */
 `;
 const ImageContainer = styled.div`
     cursor: pointer;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        max-width: 300%;
+        width: 300%;
+        height: 200%;
+        background-image: url(${Background});
+        background-repeat: no-repeat;
+        background-size: auto;
+        left: 50%;
+        top: -175px;
+        background-position: center top;
+        transform: translate(-50%);
+        z-index: -2;
+    }
 `;
 const InfoHeader = styled.h1`
     color: ${props => props.theme.headerTextColor};
@@ -49,11 +66,22 @@ const PricingButton = styled.div`
     cursor: pointer;
     border: none;
     text-align: center;
-    /* letter-spacing: 0.4px; */
     text-transform: uppercase;
 
     &:hover {
         background-color: #2f7deb;
+    }
+`;
+const Image = styled.img`
+    height: 396px;
+    width: 500;
+    box-shadow: 24px 48px 88px rgba(24,35,52,0.32);
+    transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
+    transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &:hover {
+        box-shadow: 0 48px 88px rgba(24,35,52,0.32);
+        transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(0) translateY(0);
     }
 `;
 
@@ -71,13 +99,12 @@ const Banner = () => {
                     <PricingButton>Get started</PricingButton>
                 </ButtonsContainer>
             </InfoContainer>
-            
-                {/* <ImageContainer>
-                    <img src={Placeholder} alt="placeholder" height="396" width="500" />
-                </ImageContainer> */}
+                <ImageContainer>
+                    <Image src={Placeholder} alt="placeholder" />
+                </ImageContainer>
             
         </BannerContainer>
     );
 };
 
-export default Banner;
+export default withFade(Banner);

@@ -57,6 +57,7 @@ const CheckboxCircle = styled.div`
     top: 0;
     background-color: white;
     cursor: pointer;
+    transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
 `
 const PricingCards = () => {
     const [selected, setSelected] = useState(false);

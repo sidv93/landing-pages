@@ -5,10 +5,27 @@ import Facebook from '../../assets/twist/facebook.svg';
 import Twitter from '../../assets/twist/twitter.svg';
 import Instagram from '../../assets/twist/instagram.svg';
 import GetStarted from './GetStarted';
+import Background from '../../assets/twist/illustration-section-08.svg';
 
 const FooterContainer = styled.footer`
     padding: 25px 180px;;
     min-height: 15vh;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-image: url(${Background});
+        background-repeat: no-repeat;
+        background-size: auto;
+        left: 50%;
+        bottom: 0;
+        background-position: center top;
+        transform: translate(-50%);
+        z-index: -2;
+    }
 `;
 
 const SocialsContainer = styled.div`

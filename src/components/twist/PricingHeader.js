@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const HeaderContainer = styled.div`
     text-align: center;
@@ -7,8 +8,8 @@ const HeaderContainer = styled.div`
 
 const HeaderTitle = styled.h1`
     font-family: ${props => props.theme.fontFamily}, sans-serif;
-    color: ${props => props.theme.headerTextColor};
-    font-size: 3rem;
+    color: ${props => props.theme.buttonTextColor};
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 `;
@@ -23,4 +24,4 @@ const PricingHeader = () => {
     );
 };
 
-export default PricingHeader;
+export default withFade(PricingHeader);

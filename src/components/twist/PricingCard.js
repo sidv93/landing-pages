@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import unavailable from '../../assets/twist/unavailable.png';
 import available from '../../assets/twist/available.png';
 import PricingIcon from '../../assets/twist/pricing-icon.svg';
+import withFade from '../../utils/withFade';
 
 const CardContainer = styled.div`
     background-color: ${props => props.theme.buttonTextColor};
@@ -112,13 +113,12 @@ const PricingCard = ({ price, info, middle }) => {
                     <div>
                         <span style={{ color: '#768DB2', fontSize: '3rem', fontWeight: 500 }}>$</span>
                         <span style={{ fontSize: '3.2rem', fontWeight: 900, fontFamily: 'IBM Plex Sans' }}>{price}</span>
-                        <span style={{ color: '#95A4B4', fontSize: '1.5rem', fontWeight: 500 }}>/m</span>
                     </div>
                     {
                         middle && (<div><img src={PricingIcon} height="40" width="40" alt="pricing-icon" /></div>)
                     }
                 </div>
-                <HeaderText>Lorem ipsum is a common text</HeaderText>
+                <HeaderText>/month, billed annually</HeaderText>
             </Header>
             <Title>What's included</Title>
             <ListContainer>
@@ -138,4 +138,4 @@ const PricingCard = ({ price, info, middle }) => {
     );
 };
 
-export default PricingCard;
+export default withFade(PricingCard);

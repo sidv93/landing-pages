@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const ContactContainer = styled.div`
     background-color: transparent;
@@ -60,4 +61,4 @@ const GetStarted = () => {
     );
 };
 
-export default GetStarted;
+export default withFade(GetStarted);

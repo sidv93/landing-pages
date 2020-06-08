@@ -38,7 +38,6 @@ const SecLink = styled.a`
     color: ${props => props.theme.linkColor};
     text-decoration: none;
     margin: 0 60px;
-    letter-spacing: 0.4px;
     font-weight: 500;
     text-transform: uppercase;
 

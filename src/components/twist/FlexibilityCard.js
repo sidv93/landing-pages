@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import withFade from '../../utils/withFade';
 
 const CardContainer = styled.div`
     min-width: 250px;
@@ -11,7 +12,6 @@ const IconContainer = styled.div`
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    /* background-color: ${props => props.theme.buttonBgColor}; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +44,4 @@ const FlexibilityCard = ({flex}) => {
     );
 };
 
-export default FlexibilityCard;
+export default withFade(FlexibilityCard);
