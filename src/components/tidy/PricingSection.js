@@ -5,7 +5,7 @@ import PricingCards from './PricingCards';
 
 const PricingContainer = styled.section`
     min-height: 100vh;
-    /* background-color: ${props => props.theme.bgColorPrimary}; */
+    background-color: ${props => props.theme.bgColorPrimary};
     padding: 60px 180px;
 `;
 

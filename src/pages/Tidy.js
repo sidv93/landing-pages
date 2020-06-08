@@ -24,8 +24,7 @@ const themeTidy = {
 
 const Tidy = () => {
     return (
-        // <ThemeProvider theme={themeTidy}>
-        <>
+        <ThemeProvider theme={themeTidy}>
             <HeadingSection />
             <FeatureSection />
             <FeedbackSection />
@@ -33,8 +32,7 @@ const Tidy = () => {
             <RoadmapSection />
             <PricingSection />
             <FooterSection />
-        {/* // </ThemeProvider> */}
-        </>
+        </ThemeProvider>
     );
 };
 
