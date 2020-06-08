@@ -2,6 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Background from '../../assets/twist/illustration-section-05.svg';
 import ToolkitHeader from './ToolkitHeader';
+import ToolkitLeft from './ToolkitLeft';
+import ToolkitRight from './ToolkitRight';
+import Background1 from '../../assets/twist/illustration-element-03.svg';
+import FeatureImage1 from '../../assets/twist/feature-split-image-01.svg';
+import Background2 from '../../assets/twist/illustration-element-04.svg';
+import FeatureImage2 from '../../assets/twist/feature-split-image-02.svg';
+import FeatureImage3 from '../../assets/twist/feature-split-image-03.svg';
+import Background3 from '../../assets/twist/illustration-element-05.svg';
 
 const Toolkit = styled.section`
     position: relative;
@@ -24,7 +32,7 @@ const Toolkit = styled.section`
 `;
 
 const ToolkitContainer = styled.div`
-    padding: 0 180px;;
+    padding: 60px 180px;
 `;
 
 const ToolkitSection = () => {
@@ -32,6 +40,9 @@ const ToolkitSection = () => {
         <Toolkit>
             <ToolkitContainer>
                 <ToolkitHeader />
+                <ToolkitLeft background={Background1} image={FeatureImage1} />
+                <ToolkitRight background={Background2} image={FeatureImage2} />
+                <ToolkitLeft background={Background3} image={FeatureImage3} />
             </ToolkitContainer>
         </Toolkit>
     );

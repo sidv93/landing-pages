@@ -15,6 +15,7 @@ const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding-right: 30px;
+    padding-top: 30px;
 `;
 const ImageContainer = styled.div`
     cursor: pointer;
@@ -38,10 +39,11 @@ const ImageContainer = styled.div`
 `;
 const InfoHeader = styled.h1`
     color: ${props => props.theme.headerTextColor};
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     overflow-wrap: break-word;
     font-weight: 600;
     line-height: 52px;
+    margin: 0;
 `;
 const InfoText = styled.p`
     color: ${props => props.theme.bannerTextColor};
@@ -99,10 +101,9 @@ const Banner = () => {
                     <PricingButton>Get started</PricingButton>
                 </ButtonsContainer>
             </InfoContainer>
-                <ImageContainer>
-                    <Image src={Placeholder} alt="placeholder" />
-                </ImageContainer>
-            
+            <ImageContainer>
+                <Image src={Placeholder} alt="placeholder" />
+            </ImageContainer>
         </BannerContainer>
     );
 };

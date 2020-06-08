@@ -86,7 +86,7 @@ const Included = styled.p`
     padding: 5px 0;
 `;
 const Button = styled.button`
-    background-color: ${props => props.theme.buttonBgColor};
+    background-color: ${props => props.middle ? props.theme.trialLightBlue : props.theme.buttonBgColor};
     color: ${props => props.theme.buttonTextColor};
     padding: 12px 20px;
     font-weight: 500;
@@ -96,10 +96,6 @@ const Button = styled.button`
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
-
-    ${({ middle }) => middle && `
-    background-color: #55C3F5;
-  `}
 `;
 const Image = styled.img`
     margin-right: 15px;
@@ -133,7 +129,7 @@ const PricingCard = ({ price, info, middle }) => {
                     })
                 }
             </ListContainer>
-            <Button>Start free trial</Button>
+            <Button middle={middle}>Start free trial</Button>
         </CardContainer>
     );
 };

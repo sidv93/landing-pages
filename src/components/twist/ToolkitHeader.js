@@ -16,6 +16,8 @@ const HeaderTitle = styled.h1`
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
+    margin:0;
+    
 `;
 
 const HeaderText = styled.p`
