@@ -18,7 +18,7 @@ function App() {
         <Route path="/frame">
           <Frame />
         </Route>
-        <Route path="/">
+        <Route path="/" exact>
           <Frame />
         </Route>
       </Switch>
