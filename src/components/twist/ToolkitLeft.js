@@ -61,7 +61,6 @@ const Image = styled.img`
 `;
 
 const ToolkitLeft = ({background, image}) => {
-    console.log(Image);
     return (
         <ToolkitContainer>
             <TextContainer>

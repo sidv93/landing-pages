@@ -8,7 +8,7 @@ import GetStarted from './GetStarted';
 import Background from '../../assets/twist/illustration-section-08.svg';
 
 const FooterContainer = styled.footer`
-    padding: 25px 180px;;
+    padding: 25px 180px;
     min-height: 15vh;
     position: relative;
 
