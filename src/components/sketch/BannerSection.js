@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import Header from './Header';
 import BannerText from './BannerText';
 import Background from '../../assets/sketch/illustration-section-01.svg';
+import BannerImage from './BannerImage';
 
 const Banner = styled.section`
     position: relative;
-    min-height: 150vh;
+    /* min-height: 150vh; */
 
     &::after {
         content: '';
@@ -35,6 +36,7 @@ const BannerSection = () => {
             <BannerContainer>
                 <Header />
                 <BannerText />
+                <BannerImage />
             </BannerContainer>
         </Banner>
     );
