@@ -32,7 +32,7 @@ const FeatureTitle = styled.h1`
 `;
 
 const FeatureText = styled.p`
-    font-family: ${props => props.theme.textFontFamily}, sans-serif;
+    font-family: ${props => props.theme.sectionFontFamily}, sans-serif;
     color: ${props => props.theme.sectionTextColor};
     font-size: 1.1rem;
     word-wrap: break-word;

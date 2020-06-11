@@ -36,7 +36,6 @@ const BannerSection = () => {
                 <BannerText />
             </BannerContainer>
         </Banner>
-
     );
 };
 

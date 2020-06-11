@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Tidy from './pages/Tidy';
 import Twist from './pages/Twist';
 import Frame from './pages/Frame';
+import Sketch from './pages/Sketch';
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
         <Route path="/frame">
           <Frame />
         </Route>
+        <Route path="/sketch">
+          <Sketch />
+        </Route>
         <Route path="/" exact>
-          <Frame />
+          <Sketch />
         </Route>
       </Switch>
     </Router>
