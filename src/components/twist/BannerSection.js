@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from '../twist/Header';
+import Header from '../shared/Header';
 import styled from 'styled-components';
 import BannerText from './Banner';
 import Background from '../../assets/twist/illustration-section-01.svg';
+import Logo from '../../assets/twist/logo.svg';
 
 const Banner = styled.section`
     position: relative;
@@ -32,7 +33,7 @@ const BannerSection = () => {
     return (
         <Banner>
             <BannerContainer>
-                <Header />
+                <Header logo={Logo} />
                 <BannerText />
             </BannerContainer>
         </Banner>

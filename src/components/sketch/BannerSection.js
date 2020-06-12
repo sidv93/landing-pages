@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './Header';
+import Header from '../shared/Header';
 import BannerText from './BannerText';
 import Background from '../../assets/sketch/illustration-section-01.svg';
 import BannerImage from './BannerImage';
+import Logo from '../../assets/sketch/logo.svg';
 
 const Banner = styled.section`
     position: relative;
-    /* min-height: 150vh; */
 
     &::after {
         content: '';
@@ -34,7 +34,7 @@ const BannerSection = () => {
     return (
         <Banner>
             <BannerContainer>
-                <Header />
+                <Header logo={Logo} />
                 <BannerText />
                 <BannerImage />
             </BannerContainer>

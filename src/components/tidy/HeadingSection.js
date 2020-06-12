@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 import Banner from './Banner';
+import Logo from '../../assets/tidy/logo.svg';
 
 const HeadingSectionContainer = styled.section`
     background-color: ${props => props.theme.bgColorPrimary};
