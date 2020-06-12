@@ -11,6 +11,10 @@ const BannerContainer = styled.div`
     min-height: 60vh;
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 960px) {
+        display: block;
+    }
 `;
 const InfoContainer = styled.div`
     display: flex;
@@ -34,7 +38,7 @@ const ImageContainer = styled.div`
         top: 50%;
         background-position: center top;
         transform: translate(-50%, -50%);
-        z-index: 1;
+        z-index: -1;
     }
 
     &:after {

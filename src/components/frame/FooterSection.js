@@ -53,7 +53,7 @@ const SocialContainer = styled.div`
 
 const Rights = styled.p`
     font-size: 1rem;
-    color: ${props => props.theme.linkTextColor};
+    color: ${props => props.theme.linkColor};
     font-family: ${props => props.theme.textFontFamily}, sans-serif;
 `;
 
@@ -69,7 +69,7 @@ const Link = styled.a`
     text-decoration: none;
     text-transform: capitalize;
     font-size: 1rem;
-    color: ${props => props.theme.linkTextColor};
+    color: ${props => props.theme.linkColor};
     font-family: ${props => props.theme.textFontFamily}, sans-serif;
     cursor: pointer;
     text-align: right;

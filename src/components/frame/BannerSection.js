@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Background from '../../assets/frame/illustration-section-01.svg';
-import Header from './Header';
+import Header from '../shared/Header';
 import BannerDiv from './Banner';
+import Logo from '../../assets/frame/logo.svg';
 
 const Banner = styled.section`
     position: relative;
     max-height: 80vh;
-    /* overflow-x: hidden; */
 
     &:after {
         content: '';
@@ -23,17 +23,26 @@ const Banner = styled.section`
         background-size: auto;
         background-position: center top;
         z-index: -2;
+
+        @media(max-width: 960px) {
+            background-position: 56% 0;
+            top: -92px;
+        }
     }
 `;
 const BannerContainer = styled.div`
     padding: 0 180px;
+    
+    @media(max-width: 960px) {
+        padding: 0;
+    }
 `;
 
 const BannerSection = () => {
     return (
         <Banner>
             <BannerContainer>
-                <Header />
+                <Header logo={Logo} />
                 <BannerDiv />
             </BannerContainer>
         </Banner>
