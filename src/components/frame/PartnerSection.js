@@ -10,7 +10,7 @@ const Section = styled.section`
     padding: 50px 180px;
 `;
 
-const PartnerContainer = styled.section`
+const PartnerContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,6 +37,10 @@ const PartnerContainer = styled.section`
         background-color: #D3DDEC;
         display: block;
         width: 100%;
+    }
+
+    @media(max-width: 960px) {
+        display: block;
     }
 `;
 const Partner = styled.div`

@@ -35,6 +35,11 @@ const FooterContainer = styled.footer`
         transform: translate(-50%);
         z-index: -2;
     }
+
+    @media(max-width: 960px) {
+        max-width: 960px;
+        padding: 0;
+    }
 `;
 
 const SocialsContainer = styled.div`
@@ -42,6 +47,25 @@ const SocialsContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+
+    @media(max-width: 960px) {
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+    }
+`;
+
+const RightsContainer = styled.div`
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    @media(max-width: 960px) {
+        display: block;
+        text-align: center;
+    }
 `;
 
 const SocialContainer = styled.div`
@@ -49,6 +73,11 @@ const SocialContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     align-items: center;
+
+    @media(max-width: 960px) {
+        display: block;
+        text-align: center;
+    }
 `;
 
 const Rights = styled.p`
@@ -63,7 +92,6 @@ const Links = styled.div`
     grid-gap: 30px;
     align-items: center;
 `;
-
 
 const Link = styled.a`
     text-decoration: none;
@@ -87,6 +115,10 @@ const Image = styled.img`
     &:hover {
         opacity: 1;
     }
+
+    @media(max-width: 960px) {
+        margin: 20px 20px;
+    }
 `;
 
 const FooterSection = () => {
@@ -100,15 +132,16 @@ const FooterSection = () => {
                     <Image src={Instagram} alt="instagram" />
                 </SocialContainer>
             </SocialsContainer>
-            <SocialsContainer>
-                <Rights>© 2020 Twist, all rights reserved</Rights>
+            <RightsContainer>
                 <Links>
                     <Link>contact</Link>
                     <Link>about us</Link>
                     <Link>FAQ's</Link>
                     <Link>support</Link>
                 </Links>
-            </SocialsContainer>
+                <Rights>© 2020 Twist, all rights reserved</Rights>
+
+            </RightsContainer>
         </FooterContainer>
     );
 };

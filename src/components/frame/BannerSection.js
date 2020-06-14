@@ -7,7 +7,7 @@ import Logo from '../../assets/frame/logo.svg';
 
 const Banner = styled.section`
     position: relative;
-    max-height: 80vh;
+    min-height: 90vh;
 
     &:after {
         content: '';

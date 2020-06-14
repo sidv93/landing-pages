@@ -23,6 +23,11 @@ const Section = styled.section`
         transform: translate(-50%, -50%);
         z-index: -2;
     }
+
+    @media(max-width: 960px) {
+        padding: 0;
+        max-width: 960px;
+    }
 `;
 const ContactContainer = styled.div`
     background-color: #2F75FF;
@@ -36,12 +41,19 @@ const ContactContainer = styled.div`
     justify-content: space-around;
     position: relative;
     padding-bottom: 40px;
+
+    @media(max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 `;
 const Title = styled.p`
     font-family: ${props => props.theme.headerFontFamily}, sans-serif;
     color: ${props => props.theme.buttonTextColor};
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
 `;
 const Button = styled.button`
     background-color: ${props => props.theme.getStartedBgColor};

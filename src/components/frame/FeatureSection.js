@@ -36,11 +36,20 @@ const features = [
 const Section = styled.section`
     min-height: 100vh;
     padding: 60px 180px;
+
+    @media(max-width: 960px) {
+        max-width: 960px;
+        padding: 0;
+    }
 `;
 const FeatureContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
+
+    @media(max-width: 960px) {
+        display: block;
+    }
 `;
 
 

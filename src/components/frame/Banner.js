@@ -38,7 +38,7 @@ const ImageContainer = styled.div`
         top: 50%;
         background-position: center top;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: 1;
     }
 
     &:after {
@@ -55,6 +55,10 @@ const ImageContainer = styled.div`
         background-position: center top;
         transform: translate(-50%);
         z-index: -2;
+    }
+
+    @media(max-width: 960px) {
+        padding: 20px;
     }
 `;
 const InfoHeader = styled.h1`
@@ -102,6 +106,12 @@ const Image = styled.img`
     box-shadow: 12px 32px 88px rgba(35,46,59,0.24);
     transform: perspective(1000px) rotateY(-14deg) scaleY(0.94) scaleX(1.04) translateX(-3.5%);
     transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    @media(max-width: 960px) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 `;
 
 const Banner = () => {

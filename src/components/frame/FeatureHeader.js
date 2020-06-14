@@ -9,6 +9,10 @@ const HeaderContainer = styled.div`
     justify-content: center;
     padding: 0 150px;
     text-align: center;
+
+    @media(max-width: 960px) {
+        padding: 0;
+    }
 `;
 
 const HeaderTitle = styled.h1`

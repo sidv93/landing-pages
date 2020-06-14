@@ -20,6 +20,7 @@ const themeFrame = {
 }
 
 const Container = styled.div`
+    overflow-x: hidden;
 
     @media(max-width: 960px) {
         max-width: 960px;
@@ -32,9 +33,9 @@ const Frame = () => {
             <Container>
                 <BannerSection />
                 <PartnerSection />
-                <ProcessSection />
+                {/* <ProcessSection /> */}
                 <FeatureSection />
-                <PricingSection />
+                {/* <PricingSection /> */}
                 <GetStarted />
                 <FooterSection />
             </Container>
