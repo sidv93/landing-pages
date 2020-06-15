@@ -12,6 +12,10 @@ const CardContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 32px 64px rgba(24,35,52,0.24);
+
+    @media(max-width: 960px) {
+        margin: 20px 0;
+    }
 `;
 const Header = styled.div`
     display: flex;

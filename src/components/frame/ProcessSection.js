@@ -31,11 +31,20 @@ const Process = styled.section`
         transform: translate(-50%);
         z-index: -2;
     }
+
+    @media(max-width: 960px) {
+        max-width: 960px;
+    }
 `;
 
 const ProcessContainer = styled.div`
     margin: 0 180px;
     border-bottom: 1px solid #DFE5EB;;
+
+    @media(max-width: 960px) {
+        text-align: center;
+        margin: 0;
+    }
 `;
 
 const ProcessSection = () => {

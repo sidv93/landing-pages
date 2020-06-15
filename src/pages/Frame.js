@@ -33,9 +33,9 @@ const Frame = () => {
             <Container>
                 <BannerSection />
                 <PartnerSection />
-                {/* <ProcessSection /> */}
+                <ProcessSection />
                 <FeatureSection />
-                {/* <PricingSection /> */}
+                <PricingSection />
                 <GetStarted />
                 <FooterSection />
             </Container>

@@ -8,10 +8,22 @@ const ToolkitContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 40px 0;
+
+    @media(max-width: 960px) {
+        margin: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 `;
 const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 960px) {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
 `;
 const Title = styled.p`
     font-family: ${props => props.theme.headerFontFamily}, sans-serif;
@@ -41,11 +53,11 @@ const BannerContainer = styled.div`
         height: 200%;
         background-image: url(${props => props.background});
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: contain;
         left: 50%;
-        top: -57%;
+        top: 50%;
         background-position: center top;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
         z-index: -1;
     }
 `;
@@ -58,12 +70,24 @@ const ImageContainer = styled.div`
     max-width: 140%;
     top: -13%;
     left: -16%;
+
+    @media(max-width: 960px) {
+        width: 140%;
+        max-width: 140%;
+        top: -13%;
+        left: -16%;
+    }
 `;
 const Image = styled.img`
     height: 570px;
     width: 739px;
     overflow: visible;
-    /* box-shadow: 24px 48px 88px rgba(24,35,52,0.32); */
+
+    @media(max-width: 960px) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 `;
 
 const ProcessLeft = ({ background, secondaryImg }) => {
@@ -81,7 +105,6 @@ const ProcessLeft = ({ background, secondaryImg }) => {
                     <Image src={secondaryImg} alt="placeholder" />
                 </ImageContainer>
             </BannerContainer>
-
         </ToolkitContainer>
     );
 };

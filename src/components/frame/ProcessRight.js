@@ -8,11 +8,23 @@ const ToolkitContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 80px 0;
+
+    @media(max-width: 960px) {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
 `;
 const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 25px;
+
+    @media(max-width: 960px) {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
 `;
 const Title = styled.p`
     font-family: ${props => props.theme.headerFontFamily}, sans-serif;
@@ -32,8 +44,8 @@ const Text = styled.p`
 `;
 const BannerContainer = styled.div`
     position: relative;
-    /* width: 100%; */
-    /* min-width: 520px; */
+    width: 100%;
+    /* /* min-width: 520px; */
 
     &:after {
         content: '';
@@ -50,12 +62,19 @@ const BannerContainer = styled.div`
         transform: translate(-50%, -50%);
         z-index: -1;
     }
+
+    @media(max-width: 960px) {
+        margin: 30px 0;
+   }
 `;
 const BackgroundImage = styled.img`
     /* width: 100%;
     height: auto;
     max-width: 100%;
     overflow: visible; */
+   @media(max-width: 960px) {
+        width: 100%;
+   }
 `;
 const ImageContainer = styled.div`
     position: absolute;
@@ -63,6 +82,13 @@ const ImageContainer = styled.div`
     max-width: 140%;
     top: -13%;
     left: -26%;
+
+    @media(max-width: 960px) {
+        width: 140%;
+        max-width: 140%;
+        top: -13%;
+        left: -16%;
+    }
 `;
 const Image = styled.img`
     height: 500px;
@@ -70,6 +96,12 @@ const Image = styled.img`
     overflow: visible;
     /* overflow: visible; */
     /* box-shadow: 24px 48px 88px rgba(24,35,52,0.32); */
+
+    @media(max-width: 960px) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 `;
 
 const ProcessRight = ({background, secondaryImg}) => {

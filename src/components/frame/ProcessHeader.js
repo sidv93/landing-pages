@@ -10,6 +10,12 @@ const HeaderContainer = styled.div`
     justify-content: center;
     padding: 30px 150px;
     text-align: center;
+
+    @media(max-width: 960px) {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
 `;
 
 const HeaderTitle = styled.h1`
@@ -31,6 +37,11 @@ const HeaderText = styled.p`
     overflow-wrap: break-word;
     word-wrap: break-word;
     padding: 0 80px;
+
+    @media(max-width: 960px) {
+        text-align: center;
+        padding: 10px;
+    }
 `;
 const Image = styled.img`
     box-shadow: 0 8px 24px rgba(35,46,59,0.16);

@@ -12,6 +12,7 @@ const HeaderContainer = styled.header`
     @media(max-width: 960px) {
         margin: auto;
         max-width: 960px;
+        padding: 10px;
     }
 `;
 

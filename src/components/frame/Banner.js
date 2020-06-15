@@ -21,6 +21,11 @@ const InfoContainer = styled.div`
     flex-direction: column;
     padding-right: 30px;
     padding-top: 30px;
+    
+    @media(max-width: 960px) {
+        text-align: center;
+    }
+
 `;
 const ImageContainer = styled.div`
     position: relative;
@@ -33,7 +38,7 @@ const ImageContainer = styled.div`
         height: 200%;
         background-image: url(${BeforeBackground});
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: contain;
         left: 50%;
         top: 50%;
         background-position: center top;
@@ -44,12 +49,12 @@ const ImageContainer = styled.div`
     &:after {
         content: '';
         position: absolute;
-        max-width: 300%;
-        width: 300%;
+        max-width: 200%;
+        width: 200%;
         height: 200%;
         background-image: url(${AfterBackground});
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: contain;
         left: 50%;
         top: -175px;
         background-position: center top;
@@ -77,12 +82,21 @@ const InfoText = styled.p`
     letter-spacing: 0.4px;
     overflow-wrap: break-word;
     word-wrap: break-word;
+
+    @media(max-width: 960px) {
+        padding: 0 15px;
+        text-align: center;
+    }
 `;
 const ButtonsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 30px 0;
+
+    @media(max-width: 960px) {
+        justify-content: center;
+    }
 `;
 const PricingButton = styled.div`
     background-color: ${props => props.theme.buttonBgColor};

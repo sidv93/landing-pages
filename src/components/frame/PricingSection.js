@@ -20,6 +20,10 @@ const Section = styled.section`
         clip-path: polygon(0% 1500px, 100% 0%, 100% 100%, 0% 100%);
         z-index: -3;
     }
+
+    @media(max-width: 960px) {
+        max-width: 960px;
+    }
 `;
 
 const PricingContainer = styled.div`
@@ -35,6 +39,11 @@ const PricingContainer = styled.div`
         background-color: #DFE5EB;
         top: 0;
         left: 0;
+    }
+
+    @media(max-width: 960px) {
+        padding: 20px;
+        margin: 0;
     }
 `;
 

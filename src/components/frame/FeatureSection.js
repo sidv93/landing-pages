@@ -39,7 +39,7 @@ const Section = styled.section`
 
     @media(max-width: 960px) {
         max-width: 960px;
-        padding: 0;
+        padding: 20px 10px;
     }
 `;
 const FeatureContainer = styled.div`

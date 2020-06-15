@@ -32,11 +32,19 @@ const PricingCardsContainer = styled.div`
         transform: translate(-50%, -50%);
         z-index: -2;
     }
+
+    @media(max-width: 960px) {
+
+    } 
 `;
 const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @media(max-width: 960px) {
+        display: block;
+    }
 `;
 
 const ToggleContainer = styled.div`

@@ -4,6 +4,11 @@ import withFade from '../../utils/withFade';
 
 const HeaderContainer = styled.div`
     text-align: center;
+
+    @media(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+    }
 `;
 const HeaderTitle = styled.h1`
     font-family: ${props => props.theme.headerFontFamily}, sans-serif;
@@ -21,6 +26,10 @@ const HeaderText = styled.p`
     overflow-wrap: break-word;
     word-wrap: break-word;
     padding: 0 180px;
+
+    @media(max-width: 960px) {
+        padding: 0;
+    }
 `;
 const PricingHeader = () => {
     return (

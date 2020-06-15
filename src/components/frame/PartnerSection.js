@@ -8,6 +8,10 @@ import Client5 from '../../assets/frame/clients-05.svg';
 
 const Section = styled.section`
     padding: 50px 180px;
+
+    @media(max-width: 960px) {
+        padding: 0;
+    }
 `;
 
 const PartnerContainer = styled.div`
@@ -47,6 +51,10 @@ const Partner = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media(max-width: 960px) {
+        margin: 30px 0;
+    }
 `;
 const Image = styled.img`
 
